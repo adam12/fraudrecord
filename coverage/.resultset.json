@@ -1,0 +1,49 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/sean/src/fraudrecord/lib/fraudrecord.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null,
+        1,
+        2,
+        64000,
+        null,
+        2,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1429704742
+  }
+}
