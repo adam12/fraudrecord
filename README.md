@@ -1,4 +1,4 @@
-# Fraud Record
+![Fraud Record](https://fraudrecord.com/images/logo.png)
 
 Gem wrapper for [fraudrecord.com](https://fraudrecord.com).
 
