@@ -22,5 +22,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'minitest', '~> 5.3.1'
   gem.add_development_dependency 'simplecov', '~> 0.8.2'
   gem.add_development_dependency 'coveralls', '~> 0.7.0'
+  gem.add_development_dependency 'rake'
 
 end
