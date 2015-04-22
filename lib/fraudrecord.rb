@@ -5,10 +5,17 @@ require 'digest/sha1'
 
 module Fraudrecord
   def self.query(args={})
+    raise(ArgumentError, "Env variable FRAUD_RECORD_API_KEY not set") unless ENV["FRAUD_RECORD_API_KEY"]
     processed_args = process_args(args).merge!('_action' => 'query',
                                             '_api'    => ENV["FRAUD_RECORD_API_KEY"])
     response = conn.get '/api/', processed_args
-    Hash.from_xml(response.body)['report'].split('-').collect(&:to_f)
+    value, count, reliability, report = *Hash.from_xml(response.body)['report'].split('-')
+    {
+      value: value.to_i,
+      count: count.to_i,
+      reliability: reliability.to_f,
+      report: "https://www.fraudrecord.com/api/?showreport=#{report}"
+    }
   end
 
   private
