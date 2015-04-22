@@ -2,7 +2,7 @@
 
 Gem wrapper for [fraudrecord.com](https://fraudrecord.com).
 
-[![Build Status](https://secure.travis-ci.org/seanhandley/fraudrecord.png?branch=master)] (http://travis-ci.org/seanhandley/fraudrecord) [![Gem Version](https://badge.fury.io/rb/fraudrecord.png)](http://badge.fury.io/rb/fraudrecord) [![Dependency Status](https://gemnasium.com/seanhandley/fraudrecord.svg)](https://gemnasium.com/seanhandley/fraudrecord) [![Coverage Status](https://coveralls.io/repos/seanhandley/fraudrecord/badge.png?branch=master)](https://coveralls.io/r/seanhandley/fraudrecord?branch=master) [![Code Climate](https://codeclimate.com/github/seanhandley/fraudrecord.png)](https://codeclimate.com/github/seanhandley/fraudrecord)
+[![Build Status](https://secure.travis-ci.org/seanhandley/fraudrecord.png?branch=master)] (http://travis-ci.org/seanhandley/fraudrecord) [![Gem Version](https://badge.fury.io/rb/fraudrecord.png)](http://badge.fury.io/rb/fraudrecord) [![Dependency Status](https://gemnasium.com/seanhandley/fraudrecord.svg)](https://gemnasium.com/seanhandley/fraudrecord) [![Coverage Status](https://coveralls.io/repos/seanhandley/fraudrecord/badge.svg?branch=master)](https://coveralls.io/r/seanhandley/fraudrecord?branch=master) [![Code Climate](https://codeclimate.com/github/seanhandley/fraudrecord.png)](https://codeclimate.com/github/seanhandley/fraudrecord)
 
 ## Installing
 
