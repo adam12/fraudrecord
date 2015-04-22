@@ -20,3 +20,5 @@ TEST_ENV = true
 require 'rubygems'
 gem "minitest"
 require 'minitest/autorun'
+
+ENV["FRAUD_RECORD_API_KEY"] = "foo"

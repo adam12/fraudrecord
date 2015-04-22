@@ -7,14 +7,9 @@ namespace :test do
     t.libs << 'test'
     t.pattern = "#{File.dirname(__FILE__)}/test/all.rb"
   end
-
-  Rake::TestTask.new("integration") do |t|
-    t.libs << 'test'
-    t.pattern = "#{File.dirname(__FILE__)}/test/integration/*_test.rb"
-  end
 end
 
 desc "Run tests"
-task :test => ["test:integration", "test:unit"]
+task :test => ["test:unit"]
 
 task :default => :test
