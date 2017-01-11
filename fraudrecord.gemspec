@@ -1,7 +1,7 @@
 Gem::Specification.new do |gem|
   gem.name = 'fraudrecord'
-  gem.version = '0.0.1'
-  gem.date = '2015-04-22'
+  gem.version = '0.0.2'
+  gem.date = '2017-01-11'
   gem.summary = 'fraudrecord'
   gem.description = 'API wrapper for FraudRecord.com'
   gem.authors = [ 'Sean Handley' ]
