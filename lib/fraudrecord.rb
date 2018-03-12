@@ -1,7 +1,6 @@
 require 'faraday'
-require 'active_support'
-require 'active_support/core_ext'
 require 'digest/sha1'
+require 'rexml/document'
 
 module Fraudrecord
   def self.query(args={})
@@ -9,7 +8,11 @@ module Fraudrecord
     processed_args = process_args(args).merge!('_action' => 'query',
                                             '_api'    => ENV["FRAUD_RECORD_API_KEY"])
     response = conn.get '/api/', processed_args
-    value, count, reliability, report = *Hash.from_xml(response.body)['report'].split('-')
+
+
+    doc = REXML::Document.new(response.body)
+    value, count, reliability, report = doc.get_elements('report').first.text.split('-')
+
     {
       value: value.to_i,
       count: count.to_i,
