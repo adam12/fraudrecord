@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = '> 2.0.0'
   
   # Runtime Dependencies
-  gem.add_runtime_dependency 'faraday', '~> 0.9.0'
+  gem.add_runtime_dependency 'faraday', '~> 0.9, >= 0.9.0'
   gem.add_runtime_dependency 'activesupport', '>= 4.2.0'
   
   # Development Dependencies
